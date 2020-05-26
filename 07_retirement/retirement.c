@@ -21,26 +21,26 @@ void retirement(int startAge, double initial, retire_info working, retire_info r
   initial = compute(initial, working.rate_of_return, working.contribution);
   i++;
     }
-  while(i < working.month );
+  while(i < working.months );
   int w = 0;
   do{
-     printf("Age %3d month %2d you have $%.2f\n",(w + startAge + working.month)/12, (w + startAge + working.month)%12, initial);
+     printf("Age %3d month %2d you have $%.2f\n",(w + startAge + working.months)/12, (w + startAge + working.months)%12, initial);
     initial = compute(initial, retired.rate_of_return, retired.contribution);
 
  w++;
   }
-  while(w < retired.month);
+  while(w < retired.months);
 }
 
 int main(void){
   retire_info working;
   retire_info retired;
 
-  working.month = 489;
+  working.months = 489;
   working.rate_of_return = 0.045/12;
   working.contribution = 1000;
 
-  retired.month = 384;
+  retired.months = 384;
   retired.rate_of_return = 0.01/12;
   retired.contribution = -4000;
 

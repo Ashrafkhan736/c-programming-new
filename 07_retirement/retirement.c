@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 struct _retire_info{
-  int month;
+  int months;
   double contribution;
   double rate_of_return;
 };
@@ -14,7 +14,7 @@ double compute(double p, double r, double q){
   return p;
 }
 
-void retirment(int startAge, double initial, retire_info working, retire_info retired){
+void retirement(int startAge, double initial, retire_info working, retire_info retired){
   int i =0;
   do{
     printf("Age %3d month %2d you have $%.2f\n",(i + startAge)/12, (i + startAge)%12, initial);
@@ -47,6 +47,6 @@ int main(void){
   int startAge = 327;
   double initial = 21345;
 
-  retirment(startAge, initial, working, retired);
+  retirement(startAge, initial, working, retired);
   return 0;
 }

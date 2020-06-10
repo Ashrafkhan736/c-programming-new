@@ -112,7 +112,7 @@ card_t card_from_num(unsigned c) {
   temp.value = c%13 +2;
   temp.suit = c/13;
   
-  switch(c%13 +2) {
+  switch(temp.value) {
   case 2 : temp.value = '2'; break ;
   case 3 : temp.value = '3'; break ;
   case 4 : temp.value = '4'; break ;
@@ -127,7 +127,7 @@ card_t card_from_num(unsigned c) {
   case VALUE_KING : temp.value = 'K'; break ;
   case VALUE_ACE : temp.value = 'A'; break ;
   }
-  switch(c/13) {
+  switch(temp.suit) {
 
   case SPADES : temp.suit = 's'; break ;
   case HEARTS : temp.suit = 'h'; break ;

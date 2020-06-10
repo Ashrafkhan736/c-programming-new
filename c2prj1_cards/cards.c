@@ -91,8 +91,8 @@ card_t card_from_letters(char value_let, char suit_let) {
   case '9' : temp.value = 9 ; break;
   case 'J' : temp.value = VALUE_JACK ; break;
   case 'Q' : temp.value = VALUE_QUEEN ; break;
-  case 'K' : temp.value = KING_VALUE ; break;
-  case 'A' : temp.value = ACE_VALUE ; break;
+  case 'K' : temp.value = VALUE_KING ; break;
+  case 'A' : temp.value = VALUE_ACE ; break;
     }
 
 

@@ -101,8 +101,6 @@ card_t card_from_letters(char value_let, char suit_let) {
   case 'h' : temp.suit = HEARTS ; break;
   case 'd' : temp.suit = DIAMONDS ; break;
   case 'c' : temp.suit = CLUBS ; break;
-    
-
   }
 
   return temp;
@@ -122,17 +120,17 @@ card_t card_from_num(unsigned c) {
   case 8 : temp.value = '8'; break ;
   case 9 : temp.value = '9'; break ;
   case 10 : temp.value = '0'; break ;
-  case 11 : temp.value = 'J'; break ;
-  case 12 : temp.value = 'Q'; break ;
-  case 13 : temp.value = 'K'; break ;
-  case 14 : temp.value = 'A'; break ;
+  case VALUE_JACK : temp.value = 'J'; break ;
+  case VALUE_QUEEN : temp.value = 'Q'; break ;
+  case VALUE_KING : temp.value = 'K'; break ;
+  case VALUE_ACE : temp.value = 'A'; break ;
   }
   switch(c/13) {
 
-  case 0 : temp.suit = 's'; break ;
-  case 1 : temp.suit = 'h'; break ;
-  case 2 : temp.suit = 'd'; break ;
-  case 3 : temp.suit = 'c'; break ;
+  case SPADES : temp.suit = 's'; break ;
+  case HEARTS : temp.suit = 'h'; break ;
+  case DIAMONDS : temp.suit = 'd'; break ;
+  case CLUBS : temp.suit = 'c'; break ;
   }
     
   

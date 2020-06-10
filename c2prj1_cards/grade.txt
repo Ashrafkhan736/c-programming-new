@@ -1,4 +1,4 @@
-Grading at Wed Jun 10 08:06:24 UTC 2020
+Grading at Wed Jun 10 08:09:46 UTC 2020
 Compiling cards.c
 Testing card_from_letters
 Passed

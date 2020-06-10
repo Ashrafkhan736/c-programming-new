@@ -13,15 +13,15 @@ void assert_card_valid(card_t c) {
 
 const char * ranking_to_string(hand_ranking_t r) {
     switch(r){
-    case STRAIGHT_FLUSH : printf("STRAIGHT_FLUSH \n"); break ;
-    case FOUR_OF_A_KIND : printf("FOUR_OF_A_KIND \n"); break ;
-    case FULL_HOUSE : printf("FULL_HOUSE \n"); break ;
-    case FLUSH : printf("FLUSH \n") ; break ;
-    case STRAIGHT : printf("STRAIGHT \n") ; break ;
-    case THREE_OF_A_KIND : printf("THREE_OF_A_KIND \n") ; break ;
-    case TWO_PAIR : printf("TWO_PAIR \n") ; break ;
-    case PAIR : printf("PAIR \n") ; break ;
-    case NOTHING : printf("NOTHING \n") ; break ;
+    case STRAIGHT_FLUSH : return "STRAIGHT_FLUSH"; break ;
+    case FOUR_OF_A_KIND : return "FOUR_OF_A_KIND"; break ;
+    case FULL_HOUSE : return "FULL_HOUSE"; break ;
+    case FLUSH : return "FLUSH" ; break ;
+    case STRAIGHT : return "STRAIGHT" ; break ;
+    case THREE_OF_A_KIND : return "THREE_OF_A_KIND" ; break ;
+    case TWO_return printf("TWO_PAIR" ; break ;
+    case return printf("PAIR" ; break ;
+    case NOTHING : return "NOTHING" ; break ;
     
     }
       return "";
@@ -32,19 +32,19 @@ char value_letter(card_t c) {
  
   
   switch(c.value){
-  case 2 : c.value =  2 ; break;
-  case 3 : c.value =  3 ; break ;
-  case 4 : c.value =  4 ; break ;
-  case 5 : c.value = 5 ; break ;
-  case 6 : c.value =  6 ; break ;
-  case 7 : c.value =  7 ; break ;
-  case 8 : c.value =  8 ; break ;
-  case 9 : c.value =  9 ; break ;
-  case 10 :c.value = 48; break ;
-  case 11 :c.value = 74; break ;
-  case 12 :c.value = 81; break ;
-  case 13 : c.value = 75; break ;
-  case 14 : c.value = 65 ; break ;
+  case 2 : c.value =  '2' ; break;
+  case 3 : c.value =  '3' ; break ;
+  case 4 : c.value =  '4' ; break ;
+  case 5 : c.value = '5' ; break ;
+  case 6 : c.value =  '6' ; break ;
+  case 7 : c.value =  '7' ; break ;
+  case 8 : c.value =  '8' ; break ;
+  case 9 : c.value =  '9' ; break ;
+  case 10 :c.value = '0'; break ;
+  case 11 :c.value = 'J'; break ;
+  case 12 :c.value = 'Q'; break ;
+  case 13 : c.value = 'K'; break ;
+  case 14 : c.value = 'A' ; break ;
   }
   return 'x';
 }
@@ -55,11 +55,11 @@ char suit_letter(card_t c) {
   
 
   switch(c.suit){
-  case SPADES : c.suit= 115 ; break ;
-  case HEARTS : c.suit= 104 ; break ;
-  case DIAMONDS : c.suit= 100 ; break ;
-  case CLUBS :c.suit= 99 ; break ;
-  case NUM_SUITS :c.suit= 110 ; break;
+  case SPADES : c.suit= 's' ; break ;
+  case HEARTS : c.suit= 'h' ; break ;
+  case DIAMONDS : c.suit= 'd' ; break ;
+  case CLUBS :c.suit= 'c' ; break ;
+  case NUM_SUITS :c.suit= 'n' ; break;
   }
   return 'x';
   
@@ -89,8 +89,28 @@ card_t card_from_num(unsigned c) {
   card_t temp;
 
   
-    temp.value = c%13 +2;
-    temp.suit = c/13;
+  switch(c%13 +2) {
+  case 2 : temp.value = '2'; break ;
+  case 3 : temp.value = '3'; break ;
+  case 4 : temp.value = '4'; break ;
+  case 5 : temp.value = '5'; break ;
+  case 6 : temp.value = '6'; break ;
+  case 7 : temp.value = '7'; break ;
+  case 8 : temp.value = '8'; break ;
+  case 9 : temp.value = '9'; break ;
+  case 10 : temp.value = '0'; break ;
+  case 11 : temp.value = 'J'; break ;
+  case 12 : temp.value = 'Q'; break ;
+  case 13 : temp.value = 'K'; break ;
+  case 14 : temp.value = 'A'; break ;
+  }
+  switch(c/13) {
+
+  case 0 : temp.suit = 's'; break ;
+  case 1 : temp.suit = 'h'; break ;
+  case 2 : temp.suit = 'd'; break ;
+  case 3 : temp.suit = 'c'; break ;
+  }
     
   
   return temp;

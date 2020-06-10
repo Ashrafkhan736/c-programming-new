@@ -1,4 +1,4 @@
-Grading at Wed Jun 10 07:50:48 UTC 2020
+Grading at Wed Jun 10 07:51:55 UTC 2020
 Compiling cards.c
 cards.c: In function ‘card_from_letters’:
 cards.c:98:3: error: enumeration value ‘SPADES’ not handled in switch [-Werror=switch]
@@ -19,6 +19,10 @@ cards.c:101:3: error: case value ‘104’ not in enumerated type ‘suit_t {aka
    ^
 cards.c:100:3: error: case value ‘115’ not in enumerated type ‘suit_t {aka enum <anonymous>}’ [-Werror=switch]
    case 's' : temp.suit = SPADES ; break;
+   ^
+cards.c: In function ‘card_from_num’:
+cards.c:130:3: error: enumeration value ‘NUM_SUITS’ not handled in switch [-Werror=switch]
+   switch(temp.suit) {
    ^
 cc1: all warnings being treated as errors
 Could not compile your card.c!

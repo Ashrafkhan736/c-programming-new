@@ -125,7 +125,7 @@ card_t card_from_num(unsigned c) {
   case 11 : temp.value = VALUE_JACK; break ;
   case 12 : temp.value = VALUE_QUEEN; break ;
   case 13 : temp.value = VALUE_KING; break ;
-  case 14 : temp.value = VAKUE_ACE; break ;
+  case 14 : temp.value = VALUE_ACE; break ;
   }
    switch( c/13) {
 

@@ -109,10 +109,10 @@ card_t card_from_letters(char value_let, char suit_let) {
 card_t card_from_num(unsigned c) {
   card_t temp;
 
-  temp.value = c%13 +2;
+
   
   
-  switch(temp.value) {
+  switch(c%13 +2) {
   case 2 : temp.value = '2'; break ;
   case 3 : temp.value = '3'; break ;
   case 4 : temp.value = '4'; break ;
@@ -127,7 +127,7 @@ card_t card_from_num(unsigned c) {
   case VALUE_KING : temp.value = 'K'; break ;
   case VALUE_ACE : temp.value = 'A'; break ;
   }
-   switch(temp.suit = c/13) {
+   switch( c/13) {
 
   case SPADES : temp.suit = 's'; break ;
   case HEARTS : temp.suit = 'h'; break ;

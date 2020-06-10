@@ -32,19 +32,19 @@ char value_letter(card_t c) {
  
   
   switch(c.value){
-  case 2 : c.value =  '2' ; break;
-  case 3 : c.value =  '3' ; break ;
-  case 4 : c.value =  '4' ; break ;
-  case 5 : c.value = '5' ; break ;
-  case 6 : c.value =  '6' ; break ;
-  case 7 : c.value =  '7' ; break ;
-  case 8 : c.value =  '8' ; break ;
-  case 9 : c.value =  '9' ; break ;
-  case 10 :c.value = '0'; break ;
-  case 11 :c.value = 'J'; break ;
-  case 12 :c.value = 'Q'; break ;
-  case 13 : c.value = 'K'; break ;
-  case 14 : c.value = 'A' ; break ;
+  case 2 : c.value =  2 ; break;
+  case 3 : c.value =  3 ; break ;
+  case 4 : c.value =  4 ; break ;
+  case 5 : c.value = 5 ; break ;
+  case 6 : c.value =  6 ; break ;
+  case 7 : c.value =  7 ; break ;
+  case 8 : c.value =  8 ; break ;
+  case 9 : c.value =  9 ; break ;
+  case 10 :c.value = 0; break ;
+  case 11 :c.value = J; break ;
+  case 12 :c.value = Q; break ;
+  case 13 : c.value = K; break ;
+  case 14 : c.value = A ; break ;
   }
   return 'x';
 }
@@ -55,11 +55,11 @@ char suit_letter(card_t c) {
   
 
   switch(c.suit){
-  case SPADES : c.suit= 's' ; break ;
-  case HEARTS : c.suit= 'h' ; break ;
-  case DIAMONDS : c.suit= 'd' ; break ;
-  case CLUBS :c.suit= 'c' ; break ;
-  case NUM_SUITS :c.suit= 'n' ; break;
+  case SPADES : c.suit= s ; break ;
+  case HEARTS : c.suit= h ; break ;
+  case DIAMONDS : c.suit= d ; break ;
+  case CLUBS :c.suit= c ; break ;
+  case NUM_SUITS :c.suit= n ; break;
   }
   return 'x';
   

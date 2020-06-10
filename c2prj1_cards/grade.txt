@@ -1,0 +1,38 @@
+Grading at Wed Jun 10 05:22:22 UTC 2020
+Compiling cards.c
+cards.c: In function ‘value_letter’:
+cards.c:35:12: error: ‘x’ undeclared (first use in this function)
+   case 2 : x =  2 ; break;
+            ^
+cards.c:35:12: note: each undeclared identifier is reported only once for each function it appears in
+cards.c:44:16: error: ‘J’ undeclared (first use in this function)
+   case 11 :x = J; break ;
+                ^
+cards.c:45:17: error: ‘Q’ undeclared (first use in this function)
+   case 12 :x  = Q; break ;
+                 ^
+cards.c:46:17: error: ‘K’ undeclared (first use in this function)
+   case 13 : x = K; break ;
+                 ^
+cards.c:47:17: error: ‘A’ undeclared (first use in this function)
+   case 14 : x = A ; break ;
+                 ^
+cards.c: In function ‘suit_letter’:
+cards.c:58:17: error: ‘x’ undeclared (first use in this function)
+   case SPADES : x = s ; break ;
+                 ^
+cards.c:58:21: error: ‘s’ undeclared (first use in this function)
+   case SPADES : x = s ; break ;
+                     ^
+cards.c:59:21: error: ‘h’ undeclared (first use in this function)
+   case HEARTS : x = h ; break ;
+                     ^
+cards.c:60:22: error: ‘d’ undeclared (first use in this function)
+   case DIAMONDS : x= d ; break ;
+                      ^
+cards.c:62:22: error: ‘n’ undeclared (first use in this function)
+   case NUM_SUITS :x =n ; break;
+                      ^
+Could not compile your card.c!
+
+Overall Grade: FAILED

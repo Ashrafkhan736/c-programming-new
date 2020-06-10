@@ -1,4 +1,4 @@
-Grading at Wed Jun 10 07:38:48 UTC 2020
+Grading at Wed Jun 10 07:47:04 UTC 2020
 Compiling cards.c
 cards.c: In function ‘card_from_letters’:
 cards.c:98:3: error: enumeration value ‘SPADES’ not handled in switch [-Werror=switch]

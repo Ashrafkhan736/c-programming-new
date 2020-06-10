@@ -113,26 +113,26 @@ card_t card_from_num(unsigned c) {
   
   
   switch(c%13 +2) {
-  case 2 : temp.value = '2'; break ;
-  case 3 : temp.value = '3'; break ;
-  case 4 : temp.value = '4'; break ;
-  case 5 : temp.value = '5'; break ;
-  case 6 : temp.value = '6'; break ;
-  case 7 : temp.value = '7'; break ;
-  case 8 : temp.value = '8'; break ;
-  case 9 : temp.value = '9'; break ;
-  case 10 : temp.value = '0'; break ;
-  case VALUE_JACK : temp.value = 'J'; break ;
-  case VALUE_QUEEN : temp.value = 'Q'; break ;
-  case VALUE_KING : temp.value = 'K'; break ;
-  case VALUE_ACE : temp.value = 'A'; break ;
+  case 2 : temp.value = 2; break ;
+  case 3 : temp.value = 3; break ;
+  case 4 : temp.value = 4; break ;
+  case 5 : temp.value = 5; break ;
+  case 6 : temp.value = 6; break ;
+  case 7 : temp.value = 7; break ;
+  case 8 : temp.value = 8; break ;
+  case 9 : temp.value = 9; break ;
+  case 10 : temp.value = 0; break ;
+  case 11 : temp.value = VALUE_JACK; break ;
+  case 12 : temp.value = VALUE_QUEEN; break ;
+  case 13 : temp.value = VALUE_KING; break ;
+  case 14 : temp.value = VAKUE_ACE; break ;
   }
    switch( c/13) {
 
-  case SPADES : temp.suit = 's'; break ;
-  case HEARTS : temp.suit = 'h'; break ;
-  case DIAMONDS : temp.suit = 'd'; break ;
-  case CLUBS : temp.suit = 'c'; break ;
+  case 0 : temp.suit = SPADES; break ;
+  case 1 : temp.suit = HEARTS; break ;
+  case 2 : temp.suit = DIAMONDS; break ;
+  case 3 : temp.suit = CLUBS; break ;
   default : temp.suit = NUM_SUITS; break;
    }
   

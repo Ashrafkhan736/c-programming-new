@@ -74,11 +74,11 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
-  temp.value = value_let;
-  temp.suit = suit_let;
 
 
-  switch(temp.value){
+
+
+  switch(temp.value = value_let){
 
   case '0' : temp.value =10 ; break;
   case '2' : temp.value = 2 ; break;
@@ -95,7 +95,7 @@ card_t card_from_letters(char value_let, char suit_let) {
   case 'A' : temp.value = VALUE_ACE ; break;
     }
 
-  switch(temp.suit){
+  switch(suit_let){
 
   case 's' : temp.suit = SPADES ; break;
   case 'h' : temp.suit = HEARTS ; break;
@@ -110,7 +110,7 @@ card_t card_from_num(unsigned c) {
   card_t temp;
 
   temp.value = c%13 +2;
-  temp.suit = c/13;
+  
   
   switch(temp.value) {
   case 2 : temp.value = '2'; break ;
@@ -127,14 +127,15 @@ card_t card_from_num(unsigned c) {
   case VALUE_KING : temp.value = 'K'; break ;
   case VALUE_ACE : temp.value = 'A'; break ;
   }
-  switch(temp.suit) {
+   switch(temp.suit = c/13) {
 
   case SPADES : temp.suit = 's'; break ;
   case HEARTS : temp.suit = 'h'; break ;
   case DIAMONDS : temp.suit = 'd'; break ;
   case CLUBS : temp.suit = 'c'; break ;
-  }
-    
+  default : temp.suit = NUM_SUITS; break;
+   }
+  
   
   return temp;
 }

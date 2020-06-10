@@ -19,9 +19,9 @@ const char * ranking_to_string(hand_ranking_t r) {
     case FLUSH : return "FLUSH" ; break ;
     case STRAIGHT : return "STRAIGHT" ; break ;
     case THREE_OF_A_KIND : return "THREE_OF_A_KIND" ; break ;
-    case TWO_return printf("TWO_PAIR" ; break ;
-    case return printf("PAIR" ; break ;
-    case NOTHING : return "NOTHING" ; break ;
+    case TWO_PAIR :return "TWO_PAIR" ; break ;
+    case PAIR : return "PAIR" ; break ;
+    case NOTHING : return "NOTHING"  ; break ;
     
     }
       return "";

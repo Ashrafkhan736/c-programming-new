@@ -1,61 +1,62 @@
-Grading at Wed Jun 10 05:27:12 UTC 2020
+Grading at Wed Jun 10 05:29:35 UTC 2020
 Compiling cards.c
 cards.c: In function ‘value_letter’:
-cards.c:35:16: error: lvalue required as left operand of assignment
-   case 2 : 'x' =  '2' ; break;
-                ^
-cards.c:36:16: error: lvalue required as left operand of assignment
-   case 3 : 'x' =  '3' ; break ;
-                ^
-cards.c:37:17: error: lvalue required as left operand of assignment
-   case 4 : 'x'  =  '4' ; break ;
-                 ^
-cards.c:38:17: error: lvalue required as left operand of assignment
-   case 5 : 'x'  = '5' ; break ;
-                 ^
-cards.c:39:16: error: lvalue required as left operand of assignment
-   case 6 : 'x' =  '6' ; break ;
-                ^
-cards.c:40:16: error: lvalue required as left operand of assignment
-   case 7 : 'x' =  '7' ; break ;
-                ^
-cards.c:41:16: error: lvalue required as left operand of assignment
-   case 8 : 'x' =  '8' ; break ;
-                ^
-cards.c:42:16: error: lvalue required as left operand of assignment
-   case 9 : 'x' =  '9' ; break ;
-                ^
-cards.c:43:17: error: lvalue required as left operand of assignment
-   case 10 :'x'  = '0'; break ;
-                 ^
-cards.c:44:16: error: lvalue required as left operand of assignment
-   case 11 :'x' = 'J'; break ;
-                ^
-cards.c:45:17: error: lvalue required as left operand of assignment
-   case 12 :'x'  = 'Q'; break ;
-                 ^
-cards.c:46:17: error: lvalue required as left operand of assignment
-   case 13 : 'x' = 'K'; break ;
-                 ^
-cards.c:47:17: error: lvalue required as left operand of assignment
-   case 14 : 'x' = 'A' ; break ;
-                 ^
+cards.c:35:12: error: statement with no effect [-Werror=unused-value]
+   case 2 : 'x' ==  '2' ; break;
+            ^
+cards.c:36:12: error: statement with no effect [-Werror=unused-value]
+   case 3 : 'x' ==  '3' ; break ;
+            ^
+cards.c:37:12: error: statement with no effect [-Werror=unused-value]
+   case 4 : 'x'  ==  '4' ; break ;
+            ^
+cards.c:38:12: error: statement with no effect [-Werror=unused-value]
+   case 5 : 'x'  == '5' ; break ;
+            ^
+cards.c:39:12: error: statement with no effect [-Werror=unused-value]
+   case 6 : 'x' ==  '6' ; break ;
+            ^
+cards.c:40:12: error: statement with no effect [-Werror=unused-value]
+   case 7 : 'x' ==  '7' ; break ;
+            ^
+cards.c:41:12: error: statement with no effect [-Werror=unused-value]
+   case 8 : 'x' ==  '8' ; break ;
+            ^
+cards.c:42:12: error: statement with no effect [-Werror=unused-value]
+   case 9 : 'x' ==  '9' ; break ;
+            ^
+cards.c:43:12: error: statement with no effect [-Werror=unused-value]
+   case 10 :'x'  == '0'; break ;
+            ^
+cards.c:44:12: error: statement with no effect [-Werror=unused-value]
+   case 11 :'x' == 'J'; break ;
+            ^
+cards.c:45:12: error: statement with no effect [-Werror=unused-value]
+   case 12 :'x' == 'Q'; break ;
+            ^
+cards.c:46:13: error: statement with no effect [-Werror=unused-value]
+   case 13 : 'x' == 'K'; break ;
+             ^
+cards.c:47:13: error: statement with no effect [-Werror=unused-value]
+   case 14 : 'x' == 'A' ; break ;
+             ^
 cards.c: In function ‘suit_letter’:
-cards.c:58:21: error: lvalue required as left operand of assignment
-   case SPADES : 'x' = 's' ; break ;
-                     ^
-cards.c:59:21: error: lvalue required as left operand of assignment
-   case HEARTS : 'x' = 'h' ; break ;
-                     ^
-cards.c:60:22: error: lvalue required as left operand of assignment
-   case DIAMONDS : 'x'= 'd' ; break ;
-                      ^
-cards.c:61:19: error: lvalue required as left operand of assignment
-   case CLUBS :'x' = 'c' ; break ;
+cards.c:58:17: error: statement with no effect [-Werror=unused-value]
+   case SPADES : 'x'== 's' ; break ;
+                 ^
+cards.c:59:17: error: statement with no effect [-Werror=unused-value]
+   case HEARTS : 'x' == 'h' ; break ;
+                 ^
+cards.c:60:19: error: statement with no effect [-Werror=unused-value]
+   case DIAMONDS : 'x'== 'd' ; break ;
                    ^
-cards.c:62:23: error: lvalue required as left operand of assignment
-   case NUM_SUITS :'x' = 'n' ; break;
-                       ^
+cards.c:61:15: error: statement with no effect [-Werror=unused-value]
+   case CLUBS :'x' == 'c' ; break ;
+               ^
+cards.c:62:19: error: statement with no effect [-Werror=unused-value]
+   case NUM_SUITS :'x' == 'n' ; break;
+                   ^
+cc1: all warnings being treated as errors
 Could not compile your card.c!
 
 Overall Grade: FAILED

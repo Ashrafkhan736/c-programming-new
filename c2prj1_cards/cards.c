@@ -40,11 +40,11 @@ char value_letter(card_t c) {
   case 7 : c.value =  7 ; break ;
   case 8 : c.value =  8 ; break ;
   case 9 : c.value =  9 ; break ;
-  case 10 :c.value = 0; break ;
-  case 11 :c.value = J; break ;
-  case 12 :c.value = Q; break ;
-  case 13 : c.value = K; break ;
-  case 14 : c.value = A ; break ;
+  case 10 :c.value = 48; break ;
+  case 11 :c.value = 74; break ;
+  case 12 :c.value = 81; break ;
+  case 13 : c.value = 75; break ;
+  case 14 : c.value = 65 ; break ;
   }
   return 'x';
 }
@@ -55,11 +55,11 @@ char suit_letter(card_t c) {
   
 
   switch(c.suit){
-  case SPADES : c.suit= s ; break ;
-  case HEARTS : c.suit= h ; break ;
-  case DIAMONDS : c.suit= d ; break ;
-  case CLUBS :c.suit= c ; break ;
-  case NUM_SUITS :c.suit= n ; break;
+  case SPADES : c.suit= 115 ; break ;
+  case HEARTS : c.suit= 104 ; break ;
+  case DIAMONDS : c.suit= 100 ; break ;
+  case CLUBS :c.suit= 99 ; break ;
+  case NUM_SUITS :c.suit= 110 ; break;
   }
   return 'x';
   
